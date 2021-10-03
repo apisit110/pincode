@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+.wrapper__size {
+  min-height: 100vh;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+.pin {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: rgb(0 0 0 / 8%) 0px 6px 10px;
+}
+.pin_blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  /* background-image: url(https://source.unsplash.com/random); */
+  background-color: rgba(200, 200, 200, 1);
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+.pin__header {
+}
+.pin__body {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 380px;
+  margin: 0px auto;
+}
+.pin__body__message {
+  padding: 20px;
+  text-align: center;
+}
+.pin__body__message__title {
+  padding: 10px;
+}
+.pin__body__message__title span {
+  font-size: 1.5em;
+}
+.pin__body__message__description {
+  padding: 10px;
+}
+.pin__body__message__description span {
+  font-size: 1em;
+}
+.pin__body__input {
+  padding: 0px 20px;
+  text-align: center;
+}
+.pin__body__input__box {
+  border: 2px solid rgba(145, 145, 145, 0.5);
+}
+.pin__body__input__box__flex {
+  display: flex;
+}
+.pin__body__input__box__flex input {
+  text-align: right;
+  font-size: 3.1em;
+  width: 100%;
+  max-height: 60px;
+
+  border: none;
+  color: rgba(0, 0, 0, 0.8);
+}
+.pin__body__input__box__flex input:read-only:focus {
+  outline: none;
+}
+.pin__body__input__box__flex span {
+  color: rgba(0, 0, 0, 1);
+  width: 100%;
+  max-width: 60px;
+  cursor: pointer;
+}
+.pin__body__input__box__flex span::after {
+  content: "\2715";
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.pin__body__button {
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+}
+.pin__body__button__flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.pin__body__button__flex__item {
+  padding: 20px;
+  border: 2px solid rgba(145, 145, 145, 0.5);
+  border-radius: 2px;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+}
+.pin__body__button__flex__item.dot::before {
+  content: "\A";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+}
+.pin__body__submit {
+  padding: 20px;
+  text-align: center;
+}
+.pin__body__submit button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 2px;
+  background: rgba(90, 208, 146, 1);
+
+  font-size: 1.2em;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+.pin__body__help {
+  padding: 20px;
+  text-align: center;
+}
+.pin__body__help span {
+}
+.pin__body__help span a {
+  font-size: 1.2em;
+  color: rgba(90, 208, 146, 1);
+}
+.pin__footer {
+}
